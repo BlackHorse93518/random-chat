@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>RuletkaJS.com</title>
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="css/social-sharing-buttons.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link rel="icon" sizes="192x192" href="/img/icon_192.png">
+    <link rel="manifest" href="/manifest.json">
+    <script src="js/twemoji.js"></script>
+    <script src="js/autolink-min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/social-sharing-buttons.js"></script>
+    <meta name="Description" content="WebRTC Random Video Chat">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="theme-color" content="#0dc989">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0dc989">
+    <meta property="og:image" content="/img/icon_192.png"> 
+</head>
+<body>
+    <div class="view streams">
+        <div class="header">
+            <div class="logo"></div>
+            <h1 class="title">Ruletka</h1>
+            <div class="switch"></div>
+            <div class="social-buttons" data-title="RuletkaJS.com" data-url="http://www.ruletkajs.com" >
+                <div data-start="6" class="twitter">Твитнуть</div>
+                <div data-start="12" class="facebook">Поделиться</div>
+                <div data-start="18" class="vkontakte">Поделиться</div>
+                <div data-start="5" class="gplus">Плюсануть</div>
+                <div data-start="1" class="odnoklassniki">Класснуть</div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="stream-bar">
+                <div class="streams">
+                    <div class="stream" id="remoteStream">
+                        <video id="remoteVideo" autoplay></video>
+                        <div class="spin"></div>
+                    </div>
+                    <div class="stream camera-off" id="localStream">
+                        <div class="spin"></div>
+                        <video id="localVideo" autoplay muted></video>
+                        <div class="option-btn"></div>
+                        <div class="option-menu" id="sources"></div>
+                        <div class="camera_info">
+                            <div class="icon"></div>
+                            <div class="info" id="camera-info"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="control-panel">
+                    <button class="accent" id="start-btn">Start</button>
+                    <button id="stop-btn">Stop</button>
+                    <a href="#" id="report-btn"> </a>
+                </div>
+                <div class="resize-line vertical"></div>
+            </div>
+            <div class="dialog">
+                <div class="history scroll-box">
+                    <div class="scroll-content" id="history">
+                    </div>
+                    <div class="scroll-bar">
+                        <div class="scroll-btn"></div>
+                    </div>
+                    <div class="smile-picker">
+                        <div class="scroll-box">
+                            <div class="scroll-content">
+                                <div class="title">Частоиспользуемые</div>
+                            </div>
+                            <div class="scroll-bar">
+                                <div class="scroll-btn"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="console">
+                    <div class="resize-line"></div>
+                    <div class="smile-btn"></div>
+                    <div class="submit-btn"></div>
+                    <textarea id="textarea"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

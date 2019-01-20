@@ -1,0 +1,53 @@
+.fullscreen
+    .stream-bar
+        padding 0
+        position absolute
+        top 0
+        left 0
+        width 100vw !important
+        height 100vh
+        border none
+        background #000
+        z-index 2
+    .resize-line
+        display none
+    .streams
+        height 100%
+    .stream
+        margin 0
+        &:first-child
+            display flex
+            height 100%
+        &:last-child
+            background #000
+            position absolute
+            right 0
+            bottom 0
+            margin 30px
+            width 100%
+            max-width 15%
+            min-width 230px
+            video, &
+                border-radius 4px
+                
+    .control-panel
+        background rgba(0, 0, 0, .8)
+        border-radius 8px
+        padding 5px
+        width 254px
+        position absolute
+        left 0
+        right 0
+        margin 30px auto
+        bottom 0
+        a
+            display none
+        button
+            color #fff
+        .accent
+            color #040405
+            
+    .option-menu
+        top auto
+        bottom 100%
+        bottom calc(100% - 14px)
